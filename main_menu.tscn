@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://clxhdl4l6p8hh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
+bg_color = Color(0.38481376, 0.36182234, 0.4883237, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.5179359, 0.40957826, 0.43955222, 0.6)
+shadow_size = 6
+shadow_offset = Vector2(0.45, -0.025)
+
+[node name="Main Menu" type="Node2D" unique_id=2137348460]
+
+[node name="Button" type="Button" parent="." unique_id=462631567]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -32.5
+offset_right = 111.0
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.94718033, 0.8651861, 0.71128064, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_xrivr")
+text = "Start Game"
