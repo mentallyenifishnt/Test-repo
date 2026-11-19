@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbhlukdtbau0v"
-path="res://.godot/imported/plx-2.png-5518b5ada20bfacb3a9f409f1ad50006.ctex"
+uid="uid://d04aeigorso2u"
+path="res://.godot/imported/icon.svg-629fde0be5b9a9f89818c0fc15869751.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://plx-2.png"
-dest_files=["res://.godot/imported/plx-2.png-5518b5ada20bfacb3a9f409f1ad50006.ctex"]
+source_file="res://Images/Sprites/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-629fde0be5b9a9f89818c0fc15869751.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

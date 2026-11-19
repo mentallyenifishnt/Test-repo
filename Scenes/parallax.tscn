@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://738bgr4sc7qv"]
+
+[ext_resource type="Texture2D" uid="uid://d1vfcno47f3ff" path="res://Images/BackGrounds/plx-1.png" id="1_1rrkq"]
+[ext_resource type="Texture2D" uid="uid://cbhlukdtbau0v" path="res://Images/BackGrounds/plx-2.png" id="2_ngbw4"]
+[ext_resource type="Texture2D" uid="uid://b2a2v56rdoqd2" path="res://Images/BackGrounds/plx-3.png" id="3_hd2e0"]
+[ext_resource type="Texture2D" uid="uid://dpi5i3bhe8q0g" path="res://Images/BackGrounds/plx-4.png" id="4_v1p2m"]
+[ext_resource type="Texture2D" uid="uid://da3ijd5w14ai5" path="res://Images/BackGrounds/plx-5.png" id="5_oukyj"]
+
+[node name="Parallax" type="Node2D" unique_id=885039804]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=5742006]
+repeat_size = Vector2(380, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1595101193]
+texture = ExtResource("1_1rrkq")
+centered = false
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=999104455]
+scroll_scale = Vector2(0.7, 1)
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(-5, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=808378736]
+texture = ExtResource("2_ngbw4")
+centered = false
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=421095277]
+scroll_scale = Vector2(0.5, 1)
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(-10, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=1443505258]
+texture = ExtResource("3_hd2e0")
+centered = false
+
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=913101425]
+scroll_scale = Vector2(0.3, 1)
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(-15, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=440226028]
+texture_filter = 1
+texture = ExtResource("4_v1p2m")
+centered = false
+
+[node name="Parallax2D5" type="Parallax2D" parent="." unique_id=653972112]
+scroll_scale = Vector2(0.2, 1)
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(-20, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5" unique_id=1342819482]
+texture_filter = 1
+texture = ExtResource("5_oukyj")
+centered = false

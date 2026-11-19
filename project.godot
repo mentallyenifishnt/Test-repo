@@ -13,12 +13,10 @@ config_version=5
 config/name="Test Project"
 run/main_scene="uid://dudyrf0o1rxmn"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://Sprites/icon.svg"
+config/icon="res://Images/Sprites/icon.svg"
 
 [display]
 
-window/size/viewport_width=384
-window/size/viewport_height=216
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cqs0fv8ytarnj"]
 
 [ext_resource type="Script" uid="uid://ceh8igjq14sue" path="res://Scripts/player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://c6gd1ticnbc5t" path="res://Sprites/T_idle.png" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://c6gd1ticnbc5t" path="res://Images/Sprites/T_idle.png" id="1_rpqav"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n3rge"]
 animations = [{
@@ -23,10 +23,13 @@ scale = Vector2(0.25, 0.25)
 script = ExtResource("1_kyqiw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1991714398]
-position = Vector2(-108, -124)
+position = Vector2(-440, -628)
 sprite_frames = SubResource("SpriteFrames_n3rge")
 animation = &"Idle"
 autoplay = "Idle"
+centered = false
+offset = Vector2(-214.2, 0)
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1472144992]
 shape = SubResource("CapsuleShape2D_n3rge")

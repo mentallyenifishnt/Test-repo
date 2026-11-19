@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dudyrf0o1rxmn"]
 
-[ext_resource type="Texture2D" uid="uid://cewbbgodul5gq" path="res://Sprites/OwlsWriterGrpArt.png" id="1_cmhrf"]
+[ext_resource type="Texture2D" uid="uid://cewbbgodul5gq" path="res://Images/Sprites/OwlsWriterGrpArt.png" id="1_cmhrf"]
 [ext_resource type="Script" uid="uid://dp23jn2r3i6mj" path="res://Scripts/mainmenu.gd" id="1_wgsso"]
 [ext_resource type="FontFile" uid="uid://cafjcsefsenr5" path="res://Fonts/GrapeSoda.ttf" id="2_d2nv2"]
 
@@ -86,7 +86,7 @@ theme_override_colors/font_shadow_color = Color(0.4, 0.54901963, 0.85882354, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("2_d2nv2")
 theme_override_font_sizes/font_size = 29
-text = "Stinky Min Adventures"
+text = "Stinky Blep Adventures"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]

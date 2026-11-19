@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://cicpe0fppklnm"]
 
+[ext_resource type="PackedScene" uid="uid://738bgr4sc7qv" path="res://Scenes/parallax.tscn" id="1_ujtlf"]
 [ext_resource type="PackedScene" uid="uid://cqs0fv8ytarnj" path="res://Scenes/Player.tscn" id="1_wss3j"]
-[ext_resource type="Texture2D" uid="uid://d04aeigorso2u" path="res://Sprites/icon.svg" id="2_smgeq"]
+[ext_resource type="Texture2D" uid="uid://d04aeigorso2u" path="res://Images/Sprites/icon.svg" id="2_smgeq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n3rge"]
 size = Vector2(124.99997, 128.94737)
 
 [node name="LevelOne" type="Node2D" unique_id=703738129]
+
+[node name="Parallax" parent="." unique_id=885039804 instance=ExtResource("1_ujtlf")]
+scale = Vector2(2.655, 2.655)
 
 [node name="Player" parent="." unique_id=603263584 instance=ExtResource("1_wss3j")]
 position = Vector2(311, 306)

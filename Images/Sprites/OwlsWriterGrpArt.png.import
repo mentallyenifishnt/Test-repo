@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cewbbgodul5gq"
-path="res://.godot/imported/OwlsWriterGrpArt.png-85b5c4c0abf503dd1243a90df8a7ef7a.ctex"
+path="res://.godot/imported/OwlsWriterGrpArt.png-15cb3d6dc7fdc32c105250842102a521.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/OwlsWriterGrpArt.png"
-dest_files=["res://.godot/imported/OwlsWriterGrpArt.png-85b5c4c0abf503dd1243a90df8a7ef7a.ctex"]
+source_file="res://Images/Sprites/OwlsWriterGrpArt.png"
+dest_files=["res://.godot/imported/OwlsWriterGrpArt.png-15cb3d6dc7fdc32c105250842102a521.ctex"]
 
 [params]
 
