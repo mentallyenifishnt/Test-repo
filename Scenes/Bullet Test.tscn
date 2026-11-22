@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bkeeifhxdv1ev"]
+
+[ext_resource type="Script" uid="uid://kflr8k4y7e8n" path="res://Scripts/bullet_scene_test.gd" id="1_wbvq0"]
+[ext_resource type="Texture2D" uid="uid://kfw4l5k24qmb" path="res://Images/Sprites/Screenshot 2026-11-21 214158.png" id="2_d2eoa"]
+
+[node name="BulletTest" type="Node2D" unique_id=174613459]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1826204410]
+script = ExtResource("1_wbvq0")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=536954304]
+position = Vector2(0.9999962, 0)
+scale = Vector2(0.32267886, 0.105)
+texture = ExtResource("2_d2eoa")
