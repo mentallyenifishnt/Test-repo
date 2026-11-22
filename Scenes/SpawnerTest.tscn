@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c8dmgyaxv66om"]
+
+[ext_resource type="Script" uid="uid://6k2k7uuknmx0" path="res://Scripts/Spawner Test.gd" id="1_dcp05"]
+[ext_resource type="Texture2D" uid="uid://d04aeigorso2u" path="res://Images/Sprites/icon.svg" id="2_r3f04"]
+[ext_resource type="PackedScene" uid="uid://bjelmmcrortpa" path="res://Scenes/BulletSceneTest.tscn" id="2_r73m3"]
+
+[node name="Node2D" type="Node2D" unique_id=1356526119]
+position = Vector2(1005, 390)
+script = ExtResource("1_dcp05")
+MinPosition = 700.0
+MoveTime = 1.0
+BulletScene = ExtResource("2_r73m3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1051476536]
+texture = ExtResource("2_r3f04")

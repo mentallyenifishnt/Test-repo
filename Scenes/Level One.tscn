@@ -17,7 +17,7 @@ position = Vector2(106, 414)
 JumpForce = 6.0
 JumpForceMultiplier = 100.0
 GravityScale = 1.0
-JumpCutForce = 500.0
+JumpCutForce = 1.5
 
 [node name="platform" type="StaticBody2D" parent="." unique_id=412011969]
 position = Vector2(560, 602)
