@@ -10,12 +10,14 @@ size = Vector2(124.99997, 128.94737)
 [node name="LevelOne" type="Node2D" unique_id=703738129]
 
 [node name="Parallax" parent="." unique_id=885039804 instance=ExtResource("1_ujtlf")]
-scale = Vector2(2.655, 2.655)
+scale = Vector2(2.705, 2.705)
 
 [node name="Player" parent="." unique_id=603263584 instance=ExtResource("1_wss3j")]
-position = Vector2(311, 306)
-JumpVelocity = 600.0
-GravityScale = 1.5
+position = Vector2(106, 414)
+JumpForce = 6.0
+JumpForceMultiplier = 100.0
+GravityScale = 1.0
+JumpCutForce = 500.0
 
 [node name="platform" type="StaticBody2D" parent="." unique_id=412011969]
 position = Vector2(560, 602)
