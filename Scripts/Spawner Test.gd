@@ -13,7 +13,6 @@ func _process(delta: float) -> void:
 		_moveTimer -= delta
 	else:
 		_movePosition()
-	print(_moveTimer)
 	
 	
 func _movePosition():
@@ -21,6 +20,6 @@ func _movePosition():
 	#sets the bullets spawn position to the shooters current position
 	bullet.global_position = global_position
 	#spawns bullet
-	get_tree().current_scene.add_child(bullet)
+	get_tree().current_scene.add_child.call_deferred(bullet)
 	position.y = randf_range(MaxPosition, MinPosition)
 	_moveTimer = MoveTime

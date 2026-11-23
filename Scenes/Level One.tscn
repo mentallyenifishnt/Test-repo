@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://738bgr4sc7qv" path="res://Scenes/parallax.tscn" id="1_ujtlf"]
 [ext_resource type="PackedScene" uid="uid://cqs0fv8ytarnj" path="res://Scenes/Player.tscn" id="1_wss3j"]
 [ext_resource type="Texture2D" uid="uid://d04aeigorso2u" path="res://Images/Sprites/icon.svg" id="2_smgeq"]
+[ext_resource type="PackedScene" uid="uid://c8dmgyaxv66om" path="res://Scenes/SpawnerTest.tscn" id="4_mmujx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n3rge"]
 size = Vector2(124.99997, 128.94737)
@@ -30,3 +31,6 @@ texture = ExtResource("2_smgeq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform" unique_id=348107970]
 position = Vector2(1.5, 1.3157959)
 shape = SubResource("RectangleShape2D_n3rge")
+
+[node name="Node2D" parent="." unique_id=1356526119 instance=ExtResource("4_mmujx")]
+position = Vector2(1257, 398)

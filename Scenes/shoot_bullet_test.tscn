@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dmr7qc2531566"]
+
+[ext_resource type="PackedScene" uid="uid://c8dmgyaxv66om" path="res://Scenes/SpawnerTest.tscn" id="1_efmtm"]
+
+[node name="Shoot Bullet Test" type="Node2D" unique_id=726359943]
+
+[node name="Node2D" parent="." unique_id=1356526119 instance=ExtResource("1_efmtm")]
+position = Vector2(1003, 324)
+MoveTime = 3.0

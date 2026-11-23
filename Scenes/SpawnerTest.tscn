@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://bkeeifhxdv1ev" path="res://Scenes/Bullet Test.tscn" id="2_r73m3"]
 
 [node name="Node2D" type="Node2D" unique_id=1356526119]
-position = Vector2(1005, 390)
 script = ExtResource("1_dcp05")
 MinPosition = 700.0
 MoveTime = 1.0

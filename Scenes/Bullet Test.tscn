@@ -7,8 +7,16 @@
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1826204410]
 script = ExtResource("1_wbvq0")
+BulletVelocity = 20.0
+
+[node name="Timer" type="Timer" parent="CharacterBody2D" unique_id=314288057]
+wait_time = 3.0
+one_shot = true
+autostart = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=536954304]
 position = Vector2(0.9999962, 0)
 scale = Vector2(0.32267886, 0.105)
 texture = ExtResource("2_d2eoa")
+
+[connection signal="timeout" from="CharacterBody2D/Timer" to="CharacterBody2D" method="_on_timer_timeout"]
