@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d04aeigorso2u" path="res://Images/Sprites/icon.svg" id="2_r3f04"]
 [ext_resource type="PackedScene" uid="uid://bkeeifhxdv1ev" path="res://Scenes/Bullet Test.tscn" id="2_r73m3"]
 
-[node name="Node2D" type="Node2D" unique_id=1356526119]
+[node name="gun" type="Node2D" unique_id=1356526119]
 script = ExtResource("1_dcp05")
 MinPosition = 700.0
 MoveTime = 1.0
