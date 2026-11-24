@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dx7hjwyihmspf"]
+
+[ext_resource type="Texture2D" uid="uid://kfw4l5k24qmb" path="res://Images/Sprites/Screenshot 2026-11-21 214158.png" id="1_cxaol"]
+[ext_resource type="Script" uid="uid://6k2k7uuknmx0" path="res://Scripts/Spawner Test.gd" id="1_v4tsq"]
+[ext_resource type="PackedScene" uid="uid://m7yeuqk3ioq6" path="res://Scenes/Platform.tscn" id="2_v4tsq"]
+
+[node name="PlatformSpawner" type="Node2D" unique_id=1356526119]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_v4tsq")
+MoveTime = 5.0
+SpawnScene = ExtResource("2_v4tsq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1051476536]
+texture = ExtResource("1_cxaol")

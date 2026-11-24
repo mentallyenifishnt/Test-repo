@@ -4,7 +4,7 @@ extends Node2D
 @export var MoveTime: float
 var _moveTimer: float
 
-@export var BulletScene: PackedScene
+@export var SpawnScene: PackedScene
 
 func _ready() -> void:
 	_movePosition()
@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	
 	
 func _movePosition():
-	var bullet = BulletScene.instantiate()
+	var bullet = SpawnScene.instantiate()
 	#sets the bullets spawn position to the shooters current position
 	bullet.global_position = global_position
 	#spawns bullet

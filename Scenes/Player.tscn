@@ -14,12 +14,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n3rge"]
-radius = 164.0
-height = 744.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpeww"]
+size = Vector2(284, 776)
 
 [node name="Player" type="CharacterBody2D" unique_id=603263584]
 scale = Vector2(0.25, 0.25)
+platform_on_leave = 2
 script = ExtResource("1_kyqiw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1991714398]
@@ -32,4 +32,5 @@ offset = Vector2(-214.2, 0)
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1472144992]
-shape = SubResource("CapsuleShape2D_n3rge")
+position = Vector2(-18, -28)
+shape = SubResource("RectangleShape2D_wpeww")

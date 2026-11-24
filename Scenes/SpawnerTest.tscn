@@ -8,7 +8,7 @@
 script = ExtResource("1_dcp05")
 MinPosition = 700.0
 MoveTime = 1.0
-BulletScene = ExtResource("2_r73m3")
+SpawnScene = ExtResource("2_r73m3")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1051476536]
 texture = ExtResource("2_r3f04")
