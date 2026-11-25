@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://hnorn43ttcqa"]
+
+[ext_resource type="FontFile" uid="uid://cafjcsefsenr5" path="res://Fonts/GrapeSoda.ttf" id="1_e0onf"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1817579860]
+
+[node name="Score" type="Label" parent="." unique_id=1468394726]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 40
+text = "SCORE:"
+horizontal_alignment = 1
+
+[node name="Highscore" type="Label" parent="." unique_id=603685819]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -96.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 40
+text = "HIGHSCORE:"
+horizontal_alignment = 2
+
+[node name="Press to play" type="Label" parent="." unique_id=1088057937]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -11.5
+offset_right = 84.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 40
+text = "PRESS SPACE TO PLAY"

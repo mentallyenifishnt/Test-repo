@@ -19,6 +19,8 @@ size = Vector2(284, 776)
 
 [node name="Player" type="CharacterBody2D" unique_id=603263584]
 scale = Vector2(0.25, 0.25)
+collision_layer = 9
+collision_mask = 9
 platform_on_leave = 2
 script = ExtResource("1_kyqiw")
 

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c1j4dy0v73m3q"]
+
+[ext_resource type="Texture2D" uid="uid://kfw4l5k24qmb" path="res://Images/Sprites/Screenshot 2026-11-21 214158.png" id="1_mv0nu"]
+
+[node name="Evilspirit" type="Area2D" unique_id=1809297578]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1773187495]
+texture_filter = 1
+texture = ExtResource("1_mv0nu")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1163932097]
+polygon = PackedVector2Array(-328.5, -317, -328.5, 317, 328.5, 317, 328.5, -317)
