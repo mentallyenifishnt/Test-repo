@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dudyrf0o1rxmn"]
 
 [ext_resource type="Texture2D" uid="uid://cewbbgodul5gq" path="res://Images/Sprites/OwlsWriterGrpArt.png" id="1_cmhrf"]
-[ext_resource type="Script" uid="uid://dp23jn2r3i6mj" path="res://Scripts/mainmenu.gd" id="1_wgsso"]
+[ext_resource type="Script" uid="uid://dp23jn2r3i6mj" path="res://Scripts/mainmenuOLD.gd" id="1_wgsso"]
 [ext_resource type="FontFile" uid="uid://cafjcsefsenr5" path="res://Fonts/GrapeSoda.ttf" id="2_d2nv2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_13qdw"]

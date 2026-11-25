@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://738bgr4sc7qv" path="res://Scenes/parallax.tscn" id="1_ujtlf"]
 [ext_resource type="PackedScene" uid="uid://cqs0fv8ytarnj" path="res://Scenes/Player.tscn" id="1_wss3j"]
 [ext_resource type="Texture2D" uid="uid://d04aeigorso2u" path="res://Images/Sprites/icon.svg" id="2_smgeq"]
-[ext_resource type="PackedScene" uid="uid://c8dmgyaxv66om" path="res://Scenes/SpawnerTest.tscn" id="4_mmujx"]
 [ext_resource type="PackedScene" uid="uid://dx7hjwyihmspf" path="res://Scenes/PlatformSpawner.tscn" id="5_wpeww"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n3rge"]
@@ -14,12 +13,13 @@ size = Vector2(124.99997, 128.94737)
 [node name="Parallax" parent="." unique_id=885039804 instance=ExtResource("1_ujtlf")]
 scale = Vector2(2.705, 2.705)
 
-[node name="Player" parent="." unique_id=603263584 instance=ExtResource("1_wss3j")]
+[node name="Player" parent="." unique_id=603263584 node_paths=PackedStringArray("PlayerSpot") instance=ExtResource("1_wss3j")]
 position = Vector2(106, 414)
 JumpForce = 9.0
 JumpForceMultiplier = 100.0
 GravityScale = 1.0
 JumpCutForce = 1.5
+PlayerSpot = NodePath("../platform/Player spot")
 
 [node name="platform" type="StaticBody2D" parent="." unique_id=412011969 groups=["ground"]]
 position = Vector2(560, 602)
@@ -33,11 +33,8 @@ texture = ExtResource("2_smgeq")
 position = Vector2(1.5, 1.3157959)
 shape = SubResource("RectangleShape2D_n3rge")
 
-[node name="Node2D" type="Node2D" parent="platform" unique_id=156190550]
-position = Vector2(-48.49462, -108.14815)
-
-[node name="gun" parent="." unique_id=1356526119 instance=ExtResource("4_mmujx")]
-position = Vector2(1137, 307)
+[node name="Player spot" type="Node2D" parent="platform" unique_id=156190550]
+position = Vector2(-48.17204, -142.22218)
 
 [node name="PlatformSpawner" parent="." unique_id=931442964 instance=ExtResource("5_wpeww")]
 position = Vector2(1008.99994, 324.99997)

@@ -4,16 +4,13 @@ extends CharacterBody2D
 @export var JumpForceMultiplier: float
 @export var GravityScale: float
 @export var JumpCutForce: float
+@export var PlayerSpot: Node2D
 	
 func _physics_process(delta: float) -> void:
 	move_and_slide()
 	var trueJumpForce = JumpForce * JumpForceMultiplier
-	if is_on_floor():
-		var platform = get_last_slide_collision()
-		if platform and platform.get_collider().is_in_group("Platform"):
-			var platformSpeed = platform.get_collider().MoveSpeed
-			position.x += platformSpeed
-	else:
+	global_position.x = PlayerSpot.global_position.x
+	if not is_on_floor():
 		velocity += get_gravity() * GravityScale * delta
 	
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
