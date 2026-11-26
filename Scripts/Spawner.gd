@@ -5,6 +5,7 @@ extends Node2D
 @export var MoveTime: float
 var _moveTimer: float
 
+
 @export var SpawnScene: PackedScene
 @export var MinPlatformLength: float
 @export var MaxPlatformLength: float

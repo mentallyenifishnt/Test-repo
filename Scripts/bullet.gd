@@ -2,11 +2,11 @@ extends Area2D
 
 @export var speed = 400
 @export var direction = Vector2.LEFT
-@export var damage = 10 
+@export var damage = 1 
 
 func _on_body_entered(body):
-	if body.has_method("take_damage"):
-		body.take_damage(damage)
+	if body.has_method("TakeDamage"):
+		body.TakeDamage(damage)
 	print(body.name)
 	if body.name == "Player":
 		queue_free()

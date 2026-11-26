@@ -5,7 +5,19 @@ extends CharacterBody2D
 @export var GravityScale: float
 @export var JumpCutForce: float
 @export var PlayerSpot: Node2D
+var currentHealth: int 
+@export var MaxHealth: int = 3
+func _ready():
+	currentHealth = MaxHealth
 
+func TakeDamage(Damage):
+	currentHealth -=Damage
+	print(currentHealth)
+	if currentHealth == 0:
+		die()
+	
+func die():
+	get_tree().reload_current_scene()
 
 func _physics_process(delta: float) -> void:
 	move_and_slide()
