@@ -7,22 +7,22 @@
 size = Vector2(126.53067, 103.70372)
 
 [node name="Platform" type="CharacterBody2D" unique_id=470520921 groups=["Platform"]]
-scale = Vector2(3.185, 0.27)
+scale = Vector2(1, 0.2)
 platform_on_leave = 2
 platform_floor_layers = 0
 script = ExtResource("1_8n7cf")
 MoveSpeed = 5.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=968568867]
+position = Vector2(0.3139717, -1.1368682e-13)
+scale = Vector2(0.99999934, 0.99999976)
+shape = SubResource("RectangleShape2D_1405d")
+one_way_collision = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1191534488]
 texture = ExtResource("2_kti7u")
 
 [node name="Timer" type="Timer" parent="." unique_id=1730680706]
 wait_time = 30.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=968568867]
-position = Vector2(0.31397176, -1.1368684e-13)
-scale = Vector2(0.99999946, 0.99999976)
-shape = SubResource("RectangleShape2D_1405d")
-one_way_collision = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

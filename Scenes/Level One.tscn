@@ -19,24 +19,34 @@ JumpForce = 9.0
 JumpForceMultiplier = 100.0
 GravityScale = 1.0
 JumpCutForce = 1.5
-PlayerSpot = NodePath("../platform/Player spot")
+PlayerSpot = NodePath("../Ground/Player spot")
 
-[node name="platform" type="StaticBody2D" parent="." unique_id=412011969 groups=["ground"]]
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=801995723]
+position = Vector2(1856, -456)
+scale = Vector2(4, 4)
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=412011969 groups=["ground"]]
 position = Vector2(560, 602)
 scale = Vector2(9.3, 0.675)
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="platform" unique_id=180043182]
+[node name="Sprite2D" type="Sprite2D" parent="Ground" unique_id=180043182]
 texture = ExtResource("2_smgeq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="platform" unique_id=348107970]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=348107970]
 position = Vector2(1.5, 1.3157959)
 shape = SubResource("RectangleShape2D_n3rge")
 
-[node name="Player spot" type="Node2D" parent="platform" unique_id=156190550]
+[node name="Player spot" type="Node2D" parent="Ground" unique_id=156190550]
 position = Vector2(-48.17204, -142.22218)
 
-[node name="PlatformSpawner" parent="." unique_id=931442964 instance=ExtResource("5_wpeww")]
+[node name="PlatformSpawner" parent="." unique_id=931442964 node_paths=PackedStringArray("Player") instance=ExtResource("5_wpeww")]
 position = Vector2(1008.99994, 324.99997)
 MaxPosition = 300.0
-MinPosition = 500.0
+MinPosition = 40.0
+Player = NodePath("../Player")
+MoveTime = 1.0
+MinPlatformLength = 3.0
+MaxPlatformLength = 5.0
