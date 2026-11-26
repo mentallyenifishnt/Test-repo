@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cqs0fv8ytarnj" path="res://Scenes/Player.tscn" id="1_wss3j"]
 [ext_resource type="Texture2D" uid="uid://d04aeigorso2u" path="res://Images/Sprites/icon.svg" id="2_smgeq"]
 [ext_resource type="PackedScene" uid="uid://m78e7gpraocs" path="res://Scenes/bullet.tscn" id="5_q28ef"]
-[ext_resource type="PackedScene" uid="uid://dx7hjwyihmspf" path="res://Scenes/PlatformSpawner.tscn" id="5_wpeww"]
+[ext_resource type="PackedScene" uid="uid://dx7hjwyihmspf" path="res://Scenes/Spawner.tscn" id="5_wpeww"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n3rge"]
 size = Vector2(124.99997, 128.94737)
@@ -55,6 +55,10 @@ MaxPlatformLength = 5.0
 [node name="bullet" parent="." unique_id=1818671474 instance=ExtResource("5_q28ef")]
 position = Vector2(937.99994, 394)
 
-[node name="PlatformSpawner2" parent="." unique_id=1356526119 instance=ExtResource("5_wpeww")]
+[node name="BulletSpawner" parent="." unique_id=1356526119 node_paths=PackedStringArray("Player") instance=ExtResource("5_wpeww")]
 position = Vector2(1008.99994, 325.99997)
+MaxPosition = 30.0
+MinPosition = 50.0
+Player = NodePath("../Player")
+MoveTime = 3.0
 SpawnScene = ExtResource("5_q28ef")

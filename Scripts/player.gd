@@ -5,7 +5,8 @@ extends CharacterBody2D
 @export var GravityScale: float
 @export var JumpCutForce: float
 @export var PlayerSpot: Node2D
-	
+
+
 func _physics_process(delta: float) -> void:
 	move_and_slide()
 	var trueJumpForce = JumpForce * JumpForceMultiplier
