@@ -1,14 +1,18 @@
 [gd_scene format=3 uid="uid://m78e7gpraocs"]
 
 [ext_resource type="Script" uid="uid://drwqr6mjo3aok" path="res://Scripts/bullet.gd" id="1_oduel"]
-[ext_resource type="Texture2D" uid="uid://kfw4l5k24qmb" path="res://Images/Sprites/Screenshot 2026-11-21 214158.png" id="2_ycag2"]
+[ext_resource type="Texture2D" uid="uid://dv8r136htfkhi" path="res://Images/Sprites/projectile.png" id="2_oduel"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n3rge"]
+radius = 461.73578
 
 [node name="bullet" type="Area2D" unique_id=1818671474]
 scale = Vector2(0.05, 0.05)
 script = ExtResource("1_oduel")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=585505549]
-texture = ExtResource("2_ycag2")
+texture = ExtResource("2_oduel")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1758134203]
-polygon = PackedVector2Array(-328.5, -317, -328.5, 317, 328.5, 317, 328.5, -317)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=731438094]
+position = Vector2(-159.99998, -139.99998)
+shape = SubResource("CircleShape2D_n3rge")
