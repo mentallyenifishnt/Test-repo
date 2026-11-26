@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://m78e7gpraocs"]
+
+[ext_resource type="Script" uid="uid://drwqr6mjo3aok" path="res://bullet.gd" id="1_oduel"]
+[ext_resource type="Texture2D" uid="uid://kfw4l5k24qmb" path="res://Images/Sprites/Screenshot 2026-11-21 214158.png" id="2_ycag2"]
+
+[node name="bullet" type="Area2D" unique_id=1818671474]
+scale = Vector2(0.155, 0.155)
+script = ExtResource("1_oduel")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=585505549]
+texture = ExtResource("2_ycag2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1758134203]
+polygon = PackedVector2Array(-328.5, -317, -328.5, 317, 328.5, 317, 328.5, -317)
